@@ -1,0 +1,50 @@
+body {
+    background-color: indigo;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'VT323', monospace;
+}
+
+h1 {
+    font-size: 50px;
+    color: coral;
+}
+#board {
+    background-color: rgb(120, 241, 153);
+    display: grid;
+    grid-template-columns: 100px  100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer
+}
+
+.tile{
+    color:hsl(247, 93%, 17%);
+    font-size:95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+}
+
+/* game over screen/reset button */
+
+#finishGame {
+    text-align: center;
+    margin: 40px;
+    border: solid 3px silver;
+    border-radius: 3%;
+    background: blue;
+    color:azure;
+    padding: 25px;
+    width: 250px;
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible{
+    display: block
+}
